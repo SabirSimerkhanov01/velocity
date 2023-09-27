@@ -41,6 +41,8 @@ img, svg, video {
 
 /* Reset and base styles END */
 
+/* Common properties START */
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -52,7 +54,57 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2; /* 117.647% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.title-wrapper {
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.78; /* 178.571% */
+}
+
+/* Common properties END */
+
 /* Header */
+
+.header {
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 .logo {
     color: #69B9FF;
@@ -103,6 +155,7 @@ body {
 /* welcome */
 
 .welcome {
+    margin-top: 60px;
     min-height: 594px;
     font-style: normal;
 
@@ -175,4 +228,53 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.link_primary:hover {
+    background-color: #0082F3;
+}
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.about h2, .about h4 {
+    color: #676770;
+}
+
+.about p {
+    color: #6A859C;
+}
+
+.about span {
+    color: #8E8E9C;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-top: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 94px;
+    height: 94px;
 }

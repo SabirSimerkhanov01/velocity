@@ -280,7 +280,7 @@ body {
     border: 1px solid #DCEBF7;
 }
 
-.card img {
+.about img {
     width: 94px;
     height: 94px;
 
@@ -319,8 +319,68 @@ body {
     text-transform: lowercase;
 }
 
+/* TAB SECTION */
 
+.tab {
+    padding: 80px 0 80px 0;
+    text-align: center;
 
+    display: flex;
+    flex-direction: column;
+    color: #6A859C;
+}
+
+.tab img {
+    width: 940px;
+    height: 627px;
+    background-color: #282936;
+}
+
+.tab .subtitle {
+    color: #8E8E9C;
+}
+
+.tab h4 {
+    color: #676770;
+    margin: 16px 0 14px 0;
+}
+
+.tab_buttons {
+    height: 45px;
+    margin: 60px 0 40px 0;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.tab_button {
+    border-radius: 4px;
+    width: 196px;
+    height: 21px;
+}
+
+.open {
+    background: #2E80B6;
+}
+
+.close {
+    background: #92A0AD;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* media запросы */
 
 @media (max-width: 600px) {
     .cards-wrapper {
@@ -336,5 +396,15 @@ body {
     .services img {
         width: 75%;
         height: 50%;
+    }
+
+    .tab img {
+        width: 75%;
+        height: 50%;
+    }
+
+    .tab_buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
